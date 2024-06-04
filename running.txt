@@ -1,0 +1,30 @@
+npm create vite@latest
+react...javascript
+npm i
+take prettier file && npm install prettier
+add ("react-app") in extends object of (.eslintrc.cjs) file
+npm i eslint vite-plugin-eslint eslint-config-react-app --save-dev
+import eslint from "vite-plugin-eslint" && add eslint() in vite.config.js file
+npm run dev
+
+
+tailwind css install :
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+install tailwind css intelliSense // extension
+install tailwind prettier extension from github : npm install -D prettier prettier-plugin-tailwindcss
+then create config file for this prettier extension :
+/*
+// prettier.config.js
+module.exports = {
+  plugins: ['prettier-plugin-tailwindcss'],
+}
+*/ if this is not work then remove file of prettier 
+and play in (.prettierrc.json) file like this :
+{
+  "trailingComma": "es5",
+  "tabWidth": 4,
+  "semi": false,
+  "singleQuote": true,
+  "plugins": ["prettier-plugin-tailwindcss"]
+}
